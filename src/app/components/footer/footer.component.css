@@ -1,0 +1,73 @@
+.portfolio-footer {
+  background: #08080a;
+  border-top: 1px solid var(--border-subtle);
+  padding: 3.5rem 0 2rem;
+  margin-top: 3.5rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-left {
+  text-align: center;
+}
+
+.footer-brand {
+  font-family: var(--font-mono);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-pure);
+  letter-spacing: -0.01em;
+}
+
+.footer-tagline {
+  color: var(--punk-red);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  margin-top: 0.35rem;
+  letter-spacing: 0.04em;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  font-family: var(--font-mono);
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--punk-red);
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 1.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.built-with {
+  letter-spacing: 0.06em;
+}
+
+.red-text {
+  color: var(--punk-red);
+}

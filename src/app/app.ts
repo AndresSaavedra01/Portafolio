@@ -1,12 +1,19 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { ProjectListComponent } from './components/project-list/project-list.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.css',
+  standalone: true,
+  imports: [
+    NavbarComponent,
+    ProfileComponent,
+    ProjectListComponent,
+    FooterComponent,
+  ],
   templateUrl: './app.html',
+  styleUrl: './app.css',
 })
-export class App {
-  protected readonly title = signal('Portafolio');
-}
+export class App {}

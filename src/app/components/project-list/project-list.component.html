@@ -1,0 +1,37 @@
+<section id="proyectos" class="projects-section">
+  <div class="container">
+    <!-- Header of the catalog -->
+    <div class="catalog-header">
+      <div class="header-left">
+        <span class="catalog-badge">
+          <span class="badge-dot"></span>
+          // ARCHIVOS & CATÁLOGO
+        </span>
+        <h2 class="catalog-title">Proyectos Destacados</h2>
+        <p class="catalog-subtitle">
+          Arquitectura, especificaciones técnicas y accesos directos al código fuente y despliegues en producción.
+        </p>
+      </div>
+
+      <div class="header-right">
+        <div class="counter-box">
+          <span class="counter-number">0{{ totalProjects() }}</span>
+          <span class="counter-label">TOTAL PROYECTOS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grid of Project Cards with Dynamic Rendering via @for -->
+    <div class="projects-grid">
+      @for (project of projects(); track project.id) {
+        <div class="grid-item">
+          <app-project-card [project]="project" />
+        </div>
+      } @empty {
+        <div class="empty-state">
+          <p>// NO SE ENCONTRARON PROYECTOS REGISTRADOS.</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>

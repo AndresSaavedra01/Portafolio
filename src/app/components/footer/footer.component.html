@@ -1,0 +1,24 @@
+<footer class="portfolio-footer">
+  <div class="container footer-container">
+    <div class="footer-left">
+      <span class="footer-brand">&lt;{{ profile().name }} /&gt;</span>
+      <p class="footer-tagline">
+        // {{ profile().role }}
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#perfil">// PERFIL</a>
+      <a href="#habilidades">// HABILIDADES</a>
+      <a href="#proyectos">// PROYECTOS</a>
+      <a [href]="profile().github" target="_blank" rel="noopener noreferrer">// GITHUB</a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {{ currentYear }} Andres Felipe Saavedra. All rights reserved.</p>
+      <p class="built-with">
+        BUILT WITH <strong class="red-text">ANGULAR</strong> &amp; <strong class="red-text">TYPESCRIPT</strong>.
+      </p>
+    </div>
+  </div>
+</footer>

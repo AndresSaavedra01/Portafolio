@@ -1,0 +1,231 @@
+.project-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease;
+  height: 100%;
+}
+
+.project-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--punk-red);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px -10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 42, 85, 0.12);
+}
+
+.project-card.is-featured {
+  border-top: 2px solid var(--punk-red);
+}
+
+/* Card Top Bar */
+.card-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.15rem;
+}
+
+.badge-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.featured-badge {
+  font-size: 0.68rem;
+  padding: 0.2rem 0.55rem;
+}
+
+.star-symbol {
+  color: var(--punk-red);
+  font-size: 0.75rem;
+}
+
+.category-pill {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  background: #18181c;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border-subtle);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.project-index {
+  font-family: var(--font-mono);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-dim);
+  letter-spacing: -0.02em;
+}
+
+.project-card:hover .project-index {
+  color: var(--punk-red);
+}
+
+/* Header */
+.card-header {
+  margin-bottom: 0.9rem;
+}
+
+.project-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-pure);
+  letter-spacing: -0.015em;
+  transition: color 0.2s ease;
+}
+
+.project-card:hover .project-title {
+  color: var(--punk-red);
+}
+
+.project-tagline {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: #a1a1aa;
+  font-weight: 500;
+  margin-top: 0.3rem;
+  letter-spacing: 0.02em;
+}
+
+/* Description */
+.project-description {
+  color: #a1a1aa;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.3rem;
+  flex-grow: 0;
+}
+
+/* Section label */
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--punk-red);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Tech Stack */
+.tech-stack-section {
+  margin-bottom: 1.3rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tech-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #d4d4d8;
+  background: #17171b;
+  border: 1px solid var(--border-medium);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-xs);
+  transition: all 0.2s ease;
+}
+
+.project-card:hover .tech-tag {
+  border-color: var(--border-strong);
+  color: var(--text-pure);
+}
+
+/* Features */
+.features-section {
+  margin-bottom: 1.75rem;
+  flex-grow: 1;
+}
+
+.features-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  font-size: 0.84rem;
+  color: #d4d4d8;
+  line-height: 1.45;
+}
+
+.punk-bullet {
+  color: var(--punk-red);
+  font-family: var(--font-mono);
+  font-weight: 800;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+
+/* Two Action Buttons */
+.card-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  margin-top: auto;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.65rem 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: var(--radius-xs);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-github {
+  background: transparent;
+  border: 1px solid var(--border-medium);
+  color: var(--text-main);
+}
+
+.btn-github:hover {
+  background: #18181b;
+  border-color: var(--text-pure);
+  color: var(--text-pure);
+}
+
+.btn-demo {
+  background: var(--punk-red);
+  border: 1px solid var(--punk-red);
+  color: #ffffff;
+}
+
+.btn-demo:hover {
+  background: var(--punk-red-hover);
+  border-color: var(--punk-red-hover);
+  box-shadow: 0 4px 15px var(--punk-red-glow);
+}
+
+@media (max-width: 480px) {
+  .card-actions {
+    grid-template-columns: 1fr;
+  }
+}
